@@ -48,6 +48,6 @@ RUN set -ex \
     \
     && gcc --version \
     && g++ --version
-
+RUN add-apt-repository ppa:ubuntu-toolchain-r/test && apt-get update
 COPY tarpack vercmp /usr/local/bin/
 RUN chmod a+rx /usr/local/bin/tarpack /usr/local/bin/vercmp
