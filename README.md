@@ -1,17 +1,23 @@
 [![a header for a software project about building containers for AI and machine learning](https://raw.githubusercontent.com/dusty-nv/jetson-containers/docs/docs/images/header_blueprint_rainbow.jpg)](https://www.jetson-ai-lab.com)
 
-# Command for building the vero_algo base image using the cli on a jetson orin device (can probably be done on other devices with the right parameters:
+### 🛠️ Command for Building the `vero_algo` Base Image on Jetson Orin
 
 ```bash
 jetson-containers build --name=orin pytorch ros:humble-desktop opencv jetson-utils gstreamer torchvision numpy
 ```
 
-# Jetson parameters used when building (was taken directly from the jetson's env:
-┌───────────────────────┬────────────────────────┐
-│ L4T_VERSION   36.4.3  │ JETPACK_VERSION  6.2   │
-│ CUDA_VERSION  12.6    │ PYTHON_VERSION   3.10  │
-│ SYSTEM_ARCH   aarch64 │ LSB_RELEASE      22.04 │
-└───────────────────────┴────────────────────────┘
+---
+
+### ⚙️ Jetson Build Parameters (from device environment)
+
+| Parameter         | Value   |
+|-------------------|---------|
+| **L4T_VERSION**    | 36.4.3  |
+| **JETPACK_VERSION**| 6.2     |
+| **CUDA_VERSION**   | 12.6    |
+| **PYTHON_VERSION** | 3.10    |
+| **SYSTEM_ARCH**    | aarch64 |
+| **LSB_RELEASE**    | 22.04   |
 
 # CUDA Containers for Edge AI & Robotics
 
